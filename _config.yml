@@ -3,24 +3,37 @@ markdown: kramdown
 
 # for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  name: Tobias Wothge
+  email: tobi18991@users.noreply.github.com
 
+# Theme options
+show_homepage: true # Set to true if you want to have a static front page
+show_excerpts: true # Set to true if excerpts of posts should be shown on the blog page
+
+# Jekyll options
 plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 
-collections_dir: all_collections
 collections:
+  pages:
+    output: true
   posts:
     output: true
 
 defaults:
   - scope:
+      path: "_pages"
+    values:
+      layout: "page"
+      permalink: /:title/
+  - scope:
       path: "_posts"
     values:
       layout: "post"
-      permalink: /posts/:title/
+      permalink: /blog/:year/:month/:day/:title/
+      navigation: /blog/
+
 exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]

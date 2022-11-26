@@ -1,15 +1,15 @@
-# Jekyll Theme Serial Programmer
+# Jekyll Theme Serial Programmer (NextGen)
 
-> A Jekyll theme for serial programmers (-.-)
+> A Jekyll theme for serial programmers. Original theme created by @sharadcodes.
 
-[Live Demo](https://sharadcodes.github.io/jekyll-theme-serial-programmer/)
+[Live Demo](https://tobi18991.github.io/theme-serial-programmer-ng/)
 
 ## How to install
 
 1. Download or clone the repo
-   `git clone https://github.com/sharadcodes/jekyll-theme-serial-programmer.git`
+   `https://github.com/tobi18991/theme-serial-programmer-ng.git`
 2. Enter the folder
-   `cd jekyll-theme-serial-programmer`
+   `cd theme-serial-programmer-ng`
 3. Run
    `bundle install`
 4. Start Jekyll server
@@ -19,36 +19,20 @@
 6. Change the `_config.yml` & `_data/author.yml` files as you like.
 7. Upload the files on your repository and :sunglasses: enjoy.
 
-> NOTE: You have to remove `url` and `baseurl` from `_config.yml` to use this theme for `<your-username>.github.io`
-
 ## Alert!
 
 * Don't touch `categories.js` inside `assets/js` folder unless you know what you're doing, it is used for generating links for the particular category pill you click on.
-* You should use github [discussions](https://github.com/sharadcodes/jekyll-theme-serial-programmer/discussions) to ask any question.
+* You should use github [discussions](https://github.com/tobi18991/theme-serial-programmer-ng/discussions) to ask any question.
 * Don't use issues to ask any question unless you are facing issue related to the theme, jekyll or any file.
 
-## Asking for support!
+## Support the original author
 
-Hello everyone, If you have used this theme and if it has helped you in any way or if you just want to support me for my open source work, you can support me by donating any amount.
+I am not the original author of this theme. I only made some enhancements and changed it to my needs.
 
-You can use the sponsor button at the top or on the right. 
+If you want to support the original developer, use the following link:
 
 [Github Sponsor Page](https://github.com/sponsors/sharadcodes)
 
-# Screenshots
+## Screenshots
 
-## PC BLOG PAGE
-
-![Blog page](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/pc_blog.png)
-
-## PC POST EXAMPLE
-
-![Post page](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/pc_post.png)
-
-## PHONE BLOG PAGE
-
-![Blog page](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/mobile_blog.png)
-
-## PHONE POST EXAMPLE
-
-![Post page](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/mobile_post.png)
+*TODO: Add some fancy screenshots...*

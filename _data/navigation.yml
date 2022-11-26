@@ -1,0 +1,15 @@
+# Removing this property hides the top page navigation
+top_nav:
+  - name: Home
+    link: /
+  - name: About
+    link: /about/
+  - name: Blog
+    link: /blog/
+
+# Removing this property hides the navigation in the footer
+footer_nav:
+  - name: Imprint
+    link: /imprint/
+  - name: Privacy
+    link: /privacy/

@@ -1,0 +1,16 @@
+<section id="articles">
+  {% for post in site.posts %}
+  <article class="article">
+    <h2 class="article-title">
+      <a href="{{post.url | absolute_url}}"> {{post.title}} </a>
+    </h2>
+    <small class="date">{{post.date | date_to_string}}</small>
+    <div class="categories">
+      {% for c in post.categories %}
+      <a href="#!" data-base-url="{{site.baseurl}}" class="category">{{c}}</a>
+      {% endfor %}
+    </div>
+    {% if site.show_excerpts %}<div class="article-excerpt">{{post.excerpt}}</div>{% endif %}
+  </article>
+  {%endfor%}
+</section>

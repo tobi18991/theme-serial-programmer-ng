@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,300;0,400;0,800;1,100;1,300;1,400;1,800&display=swap");
+
+* {
+  font-family: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  -webkit-user-drag: none;
+  -moz-window-dragging: none;
+  -webkit-tap-highlight-color: transparent;
+
+  & img {
+    max-width: 100%;
+  }
+}
+
+html,
+body {
+  color: var(--white-2);
+  background-color: var(--gray-6);
+  font-family: "JetBrains Mono", monospace;
+  line-height: 2rem;
+  background-color: var(--gray-5);
+}
+
+header {
+  padding: 2rem 0 3rem 0;
+
+  & .site-title {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    line-height: 110%;
+    color: var(--white-1);
+  }
+}
+
+nav {
+  margin-bottom: 3rem;
+
+  & a {
+    position: relative;
+    display: inline-block;
+    padding: 0.75rem 0.25rem;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: var(--white-2);
+
+    /* https://www.sliderrevolution.com/resources/css-border-animation/ */
+
+    &.active,
+    &:hover {
+      color: var(--white-1);
+
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 2px;
+      left: 50%;
+      bottom: 0;
+      background-color: var(--white-1);
+      transition: all ease-in-out .2s;
+    }
+  }
+}
+
+main {
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 3rem 0;
+}
+
+footer a {
+  color: cyan;
+  border-bottom: 1px solid cyan;
+
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  header .site-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav a {
+    display: block;
+
+    &.active::before {
+      content: '>';
+      margin-right: 0.75rem;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

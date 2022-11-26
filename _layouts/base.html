@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+  <main>
+    {% include header.html %}
+    {% if page.layout == "front" %}{% include bio.html %}{% endif %}
+    {% include navigation.html %}
+    {{ content }}
+    {% include footer.html %}
+  </main>
+{% include category-modal.html %}
+</body>
+</html>

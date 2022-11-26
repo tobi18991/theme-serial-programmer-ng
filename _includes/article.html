@@ -1,0 +1,17 @@
+<section id="article">
+  <div class="article-header">
+    <h1 class="article-title">{% if page.article_title %}{{page.article_title}}{% else %}{{page.title }}{% endif %}</h1>
+    {% if page.layout == "post" %}
+    <small class="date">{{page.date | date_to_string}}</small>
+    <div class="categories">
+      {% for c in page.categories %}
+      <a href="#!" class="category">{{c}}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  <div class="content">
+    {{ content }}
+    {% if page.layout == "post" %}<p><a href="{{'/blog/' | absolute_url}}">&#8592; Back</a></p>{% endif %}
+  </div>
+</section>

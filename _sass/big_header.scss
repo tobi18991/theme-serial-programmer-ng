@@ -1,0 +1,21 @@
+header {
+  padding-bottom: 4rem;
+
+  & .site-title {
+    font-size: 4rem !important;
+  }
+}
+
+/* media query */
+
+@media screen and (max-width: 750px) {
+  header .site-title {
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .site-title {
+    font-size: 2.4rem !important;
+  }
+}

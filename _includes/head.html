@@ -2,16 +2,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{site.title}} | {{page.title}}</title>
-  {% if page.layout == "post" %}
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css" />
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css" />
+  <title>{{page.title}} - {{site.title}}</title>
+  <link rel="icon" href="{{'/assets/icons/favicon.ico' | absolute_url}}" />
+  {% if page.layout == "front" %}
+  <link rel="stylesheet" href="{{'/assets/css/front.css' | absolute_url}}" />
+  {% elsif page.layout == "blog" %}
+  <link rel="stylesheet" href="{{'/assets/css/blog.css' | absolute_url}}" />
   {% else %}
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/blog.css" />
-  {%endif%}
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/common.css" />
-  <script src="{{site.baseurl}}/assets/js/categories.js"></script>
-  {% if page.layout == "post" %}
-  <script defer src="{{site.baseurl}}/assets/js/lbox.js"></script>
+  <link rel="stylesheet" href="{{'/assets/css/article.css' | absolute_url}}" />
   {% endif %}
+  <link rel="stylesheet" href="{{'/assets/css/syntax.css' | absolute_url}}" />
+  <link rel="stylesheet" href="{{'/assets/css/common.css' | absolute_url}}" />
+  <script src="{{'/assets/js/categories.js' | absolute_url}}"></script>
+  <script defer src="{{'/assets/js/lbox.js' | absolute_url}}"></script>
 </head>
