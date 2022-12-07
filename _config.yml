@@ -12,7 +12,6 @@ show_excerpts: true # Set to true if excerpts of posts should be shown on the bl
 
 # Jekyll options
 plugins:
-  - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
@@ -36,4 +35,4 @@ defaults:
       permalink: /blog/:year/:month/:day/:title/
       navigation: /blog/
 
-exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
+exclude: ["screenshots", "sitemap.xml", "feed.xml", "LICENSE", "README.md"]
