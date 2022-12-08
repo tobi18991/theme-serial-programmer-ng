@@ -1,4 +1,6 @@
 title: Jekyll Serial Programmer
+# url: https://www.yourdomain.com # Do not uncomment when using GitHub Pages
+# baseurl: /test # Do not uncomment when using GitHub Pages
 markdown: kramdown
 
 # for atom feed
@@ -10,6 +12,8 @@ author:
 show_homepage: true # Set to true if you want to have a static front page
 show_excerpts: true # Set to true if excerpts of posts should be shown on the blog page
 favicon: /assets/images/avatar.png # Set to the relative path where the favicon is stored
+redirect_to_https: true # If true, requests on HTTP/80 will be redirected to HTTPS/443 (.htaccess file)
+include_hsts: true # If true, the Strict-Transport-Security header will be appended to requests on HTTPS/443 (.htaccess file)
 
 # Jekyll options
 plugins:
