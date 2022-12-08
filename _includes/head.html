@@ -2,7 +2,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="{{'/assets/icons/favicon.ico' | absolute_url}}" />
+  {% if site.favicon %}
+  <link rel="icon" href="{{site.favicon | absolute_url}}" />
+  {% endif %}
   {% if page.layout == "front" %}
   <link rel="stylesheet" href="{{'/assets/css/front.css' | absolute_url}}" />
   {% elsif page.layout == "blog" %}

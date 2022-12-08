@@ -9,6 +9,7 @@ author:
 # Theme options
 show_homepage: true # Set to true if you want to have a static front page
 show_excerpts: true # Set to true if excerpts of posts should be shown on the blog page
+favicon: /assets/images/avatar.png # Set to the relative path where the favicon is stored
 
 # Jekyll options
 plugins:
